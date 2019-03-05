@@ -1,33 +1,65 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  background-color: #000;
+  background-size: cover;
+  position: relative;
+  color: #fff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  position: absolute;
+  background: rgba(5, 8, 11, 0.52);
+  width: 100%;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.Service{
+  margin: 0 0 8px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+.ServiceInner{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.ServiceInner img{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ServiceInner h5{
+ font-size: 16px;
 }
+
+.ServiceInner p{
+ font-size: 12px;
+}
+
+.Movies img {
+  height: 32px;
+  width: initial;
+  border-radius: 0;
+  border: none;
+}
+
