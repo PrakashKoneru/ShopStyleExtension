@@ -17,7 +17,7 @@ class App extends Component {
           <div className="main_recommendation">
             <div className='main_recommendation_content'>
               <div>
-                <img height="275px" width="200px" src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/11934455_fpx.tif?op_sharpen=1&amp;wid=500&amp;hei=613&amp;fit=fit,1&amp;$filtersm$"/>
+                <img height="200px" width="150px" src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/11934455_fpx.tif?op_sharpen=1&amp;wid=500&amp;hei=613&amp;fit=fit,1&amp;$filtersm$"/>
               </div>
               <div className="main_content_details_container">
                 <div className="main_content_details">
