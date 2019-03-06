@@ -13,11 +13,11 @@ class SimilarProducts extends Component {
         <div className="similar_products_price_categ">{price}</div>
         <div
           onMouseEnter={() => this.setState({hidden: false})} onMouseLeave={() => this.setState({hidden: true})}
-          style={{ height:"275px", width:"200px", margin: 'auto'}}
+          style={{ height:"200px", width:"200px", margin: 'auto'}}
         >
           <img
-            height="275px"
-            width="200px"
+            height="200px"
+            width="150px"
             src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/11934455_fpx.tif?op_sharpen=1&amp;wid=500&amp;hei=613&amp;fit=fit,1&amp;$filtersm$"
           />
           <div className={hidden ? 'hidden' : "similar_products_actions_div"}>

@@ -166,8 +166,8 @@ body {
   position: absolute;
   bottom: 0;
   margin: auto;
-  height: 275px;
-  width: 200px;
+  height: 200px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
