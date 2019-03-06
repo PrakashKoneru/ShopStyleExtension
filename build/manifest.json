@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Display all activities",
-  "homepage_url": "https://tumudinakar.github.io/myactivities/",
   "browser_action": {
     "default_popup": "index.html"
   },

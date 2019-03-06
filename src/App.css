@@ -1,65 +1,218 @@
-.App {
-  height: 100vh;
-  background-color: #000;
-  background-size: cover;
-  position: relative;
-  color: #fff;
+body {
+  padding: 0;
+  background: #fdf0f0;
+  font-family: "Averta Semi Bold"
 }
-
-.Container {
-  position: absolute;
-  background: rgba(5, 8, 11, 0.52);
-  width: 100%;
+.container {
   height: 100vh;
-}
-
-.Main{
-  position: relative;
+  width: 100vw;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+}
+
+.main_recommendation_conatiner {
+  width: 100%
+}
+
+.similar_products_container {
+  flex: 1;
+  height: 100%;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  background: white; 
+  margin-left: -10px;
+}
+
+.main_recommendation {
+  background: #fdf0f0;
+}
+
+.main_recommendation_content {
+  width: 75%;
+  margin: auto;
+  display: flex;
   align-items: center;
 }
 
-
-
-.Service{
-  margin: 0 0 8px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
+.main_content_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.ServiceInner{
+.main_content_details_container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  color: #a9a9aa;
+}
+
+.main_content_details_title {
+  padding: 10px 0px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.main_content_details_price {
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+}
+
+.main_content_details_estimate {
+  font-size: 12px;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.strikethrough {
+  position: relative;
+  opacity: 0.4;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+}
+
+.actions_div {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.heart_container {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.copy_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 0px 15px;
+}
+
+.add_to_widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 25px;
+  background: white;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.heart_container:hover, .copy_link:hover, .add_to_widget:hover {
+  color: white;
+  background: blue;
+}
+
+.share-buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.share-buttons > div {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.similar_products_title {
+  text-align: center;
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.similar_products_content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.similar_products_price_categ {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.similar_products_actions_div {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  height: 275px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
-.ServiceInner img{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  width: 32px;
+.similar_products_actions {
+  display: flex;
+  background: white;
+  margin: 15px;
+  width: 150px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-.ServiceInner h5{
- font-size: 16px;
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.ServiceInner p{
- font-size: 12px;
+.iconContent {
+  width: 100%;
+  text-align: left;
 }
 
-.Movies img {
-  height: 32px;
-  width: initial;
-  border-radius: 0;
-  border: none;
+.hidden {
+  display: none;
+}
+
+.plus {
+  background: blue;
+  color: white;
+}
+
+.heart {
+  background: palevioletred;
 }
 
